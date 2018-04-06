@@ -69,8 +69,9 @@ class App extends Component {
           <source src={music} type="audio/mpeg"></source>
         </audio>
         <div className="quotes-header">
-          <h2>Bojack Horseman Random Quote Generator</h2>
-          <p className="quote-text">{this.state.currQuote}</p>
+          <h1>BoJack Horseman Random Quote Generator</h1>
+          <div className="quote-box"><h4 className="quote-text">{this.state.currQuote}</h4></div>
+          
           <button className="button" onClick={this.mainButtonClickHandler}>Get Another Quote!</button>
         </div>
         <FontAwesome

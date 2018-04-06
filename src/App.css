@@ -15,15 +15,6 @@ body, html {
   font-family: bojackFont;
 }
 
-/*
-.app-header {
-  background-color: #222;
-  padding: 10px;
-  color: white;
-  font-size: 20pt;
-}
-*/
-
 @font-face {
   font-family: bojackFont;
   src: url('./ness.ttf');
@@ -31,16 +22,21 @@ body, html {
 
 .quotes-header {
   width: 100%;
-  height: auto;
+  height: 97%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
+.quote-box {
+  width: 57%;
+  margin: auto;
+}
+
 .quote-text {
-  position: relative;
+  font-size: 18px;
   color: white;
-  font-family: bojackFont;
+  margin: 0;
 }
 
 .button {
@@ -50,10 +46,15 @@ body, html {
   cursor: pointer;
   user-select: none;
   font-family: bojackFont;
-  color: white;
-  padding: 15px 32px;
+  color: #ccc;
+  padding: 2% 5%;
+  border-radius: 5px;
+  border-width: 1px;
   text-decoration: whitesmoke;
   font-size: 16px;
+  top: 65%;
+  background-color: rgba(28, 22, 66, 0.425);
+  position: sticky;
 }
 
 button:focus {

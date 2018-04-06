@@ -1,56 +1,72 @@
 body, html {
   padding: 0;
   margin: 0;
+  height: 100%;
+  background-image: url("./background.jpg");
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .app-root {
   text-align: center;
+  font-family: bojackFont;
 }
 
+/*
 .app-header {
   background-color: #222;
   padding: 10px;
   color: white;
   font-size: 20pt;
 }
+*/
+
+@font-face {
+  font-family: bojackFont;
+  src: url('./ness.ttf');
+}
 
 .quotes-header {
   width: 100%;
-  height: 100%;
-  position: absolute; top: 0; left: 0;
-  background-image: url("./background.jpg");
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: scroll;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .quote-text {
   position: relative;
   color: white;
+  font-family: bojackFont;
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
+  border-color: #ccc;
+  background-color: transparent;
+  border: solid;
+  cursor: pointer;
+  user-select: none;
+  font-family: bojackFont;
   color: white;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  text-decoration: whitesmoke;
   font-size: 16px;
+}
+
+button:focus {
+  outline:0; /* no blue borders after click */
 }
 
 .volume-button {
   font-size: 20px;
   color: #ccc;
   cursor: pointer;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  margin: 5px;
+  position: fixed;
+  bottom: 20px;
+  left: 5px;
 }
 
 .volume-button:hover {
@@ -58,14 +74,26 @@ body, html {
 }
 
 .credits {
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  background-color: #222;
   color: white;
-  margin: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 220, 220);
+}
 
 /*
 .App {

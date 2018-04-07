@@ -3,7 +3,8 @@ body, html {
   margin: 0;
   height: 100%;
   background-image: url("./background.jpg");
-  
+  text-align: center;
+
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -11,8 +12,10 @@ body, html {
 }
 
 .app-root {
-  text-align: center;
   font-family: bojackFont;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 @font-face {
@@ -22,43 +25,51 @@ body, html {
 
 .quotes-header {
   width: 100%;
-  height: 97%;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 }
 
 .quote-box {
-  width: 57%;
   margin: auto;
+  position: relative;
+  width: 57%;
 }
 
 .quote-text {
   font-size: 18px;
   color: white;
-  margin: 0;
+  transition: opacity 1s;
+  position: absolute;
+
+  /* centering a absolute positioned element */
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 .button {
-  border-color: #ccc;
-  background-color: transparent;
+  border-color: rgb(126, 126, 126);
   border: solid;
   cursor: pointer;
   user-select: none;
   font-family: bojackFont;
-  color: #ccc;
-  padding: 2% 5%;
-  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: 2% 3%;
+  border-radius: 20px;
   border-width: 1px;
-  text-decoration: whitesmoke;
-  font-size: 16px;
-  top: 65%;
+  font-size: 20px;
   background-color: rgba(28, 22, 66, 0.425);
   position: sticky;
+  top: 400px;
 }
 
 button:focus {
   outline:0; /* no blue borders after click */
+}
+
+button:hover {
+  background-color: rgba(39, 26, 121, 0.425);
 }
 
 .volume-button {
@@ -95,34 +106,3 @@ a:visited {
 a:hover {
   color: rgb(255, 220, 220);
 }
-
-/*
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-*/

@@ -39,7 +39,8 @@ class App extends Component {
       "Okay. Carolyn, you are the star of a movie. And this is the part of the movie where you get your heart broken. Where the world tests you, and people treat you like shit. But it has to happen this way. Otherwise, the end of the movie, when you get everything you want, won't feel as rewarding. There are assholes out there, but in the end, they don't matter. Because this movie's not about them. It's never been about them. All this time, the movie's been about you.",
       "Juice controls the media.",
       "You're BoJack Horseman. There's no cure for that.",
-      "I do love having my picture taken. It's proof I exist."
+      "I do love having my picture taken. It's proof I exist.",
+      "Closure is a thing made up by Steven Spielberg to sell movie tickets."
     ];
     this.mainButtonClickHandler = this.mainButtonClickHandler.bind(this);
     this.volumeClickHandler = this.volumeClickHandler.bind(this);
